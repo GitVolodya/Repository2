@@ -11,3 +11,6 @@ int main()
 	puts("¬ведите число");
 	scanf("%d", &n);
 	fprintf(fp, "%d\n", n);
+	for (int i = 0;i < 3;i++)
+	{
+		printf("¬ведите строку %d \n", i + 1);
