@@ -19,3 +19,11 @@ for (int j = 0;j < 10;j++)
 			scanf("%c", &str1[i][j]);
 		}
 	}
+for (int i = 0;i < 3;i++)
+	{
+		for (int j = 0;j < 10;j++)
+			fprintf(fp, "%c", str1[i][j]); //Запись строки в файл
+	}
+	fclose(fp);
+	printf("Распечатка содержимого файла\n");
+	if ((fp = fopen("D:\\ex.txt", "r")) != NULL)
