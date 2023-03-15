@@ -42,3 +42,7 @@ for (int i = 0;i < 3;i++)
 		}
 		fclose(fp);
 	}
+	else
+		printf("\n Нельзя открыть файл для чтения !");
+	getch();
+}
