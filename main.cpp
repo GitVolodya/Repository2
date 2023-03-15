@@ -14,3 +14,8 @@ int main()
 	for (int i = 0;i < 3;i++)
 	{
 		printf("¬ведите строку %d \n", i + 1);
+for (int j = 0;j < 10;j++)
+		{
+			scanf("%c", &str1[i][j]);
+		}
+	}
