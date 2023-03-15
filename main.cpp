@@ -27,3 +27,18 @@ for (int i = 0;i < 3;i++)
 	fclose(fp);
 	printf("Распечатка содержимого файла\n");
 	if ((fp = fopen("D:\\ex.txt", "r")) != NULL)
+	{
+		fscanf(fp, "%d", &n);
+		printf("n= %d\n", n);
+		for (int i = 0;i < 3;i++)
+		{
+			for (int j = 0;j < 10;j++)
+				fscanf(fp, "%c", &str1[i][j]);
+		}
+		for (int i = 0;i < 3;i++)
+		{
+			for (int j = 0;j < 10;j++)
+				printf("%c", str1[i][j]);
+		}
+		fclose(fp);
+	}
